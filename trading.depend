@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1681600159 source:c:\users\user\onedrive\bureau\trading\trading\main.cpp
+	<iostream>
+	"trading.h"
+
+1681600175 source:c:\users\user\onedrive\bureau\trading\trading\trading.cpp
+	<iostream>
+	"trading.h"
+
+1681599262 c:\users\user\onedrive\bureau\trading\trading\trading.h
+
