@@ -21,74 +21,75 @@ date::date(int j ,int m ,int a)
 }
 bool date::est_bissextile(int A)
 {
-    if(A%4==0){
+    if(A%4==0)
         return true;
-    }
-    else{
+    else
         return false;
-    }
 }
  int date::est_findemois(int M,int y)
  {
-     if(M==1|| M==3 || M==5 || M==7 || M==8 || M==10 || M== 12){
+     if(M==1|| M==3 || M==5 || M==7 || M==8 || M==10 || M== 12)
         return 31;
-     }
-
-
-      else if(M==4|| M==6 || M==9 || M==11 ){
+     else if(M==4|| M==6 || M==9 || M==11 )
         return 30;
-     }
-     else if((M==2 )&&(est_bissextile(y)==true)){
+     else if((M==2 )&&(est_bissextile(y)==true))
         return 29;
-     }
-     else if((M==2 )&&(est_bissextile(y)==false)){
+     else if((M==2 )&&(est_bissextile(y)==false))
         return 28;
-     }
-
  }
  void date::incrementerdate()
  {
-     while((mois>0)&&(mois<=12)){
-        if((est_findemois(mois,annee)==30)&&(jour==30)){
-        jour=1;
-        mois++;
-     }
-        else if((est_findemois(mois,annee)==31)&&(jour==31)){
-            if(mois==12){
+     while((mois>0)&&(mois<=12))
+     {
+        if((est_findemois(mois,annee)==30)&&(jour==30))
+        {
+            jour=1;
+            mois++;
+        }
+        else if((est_findemois(mois,annee)==31)&&(jour==31))
+        {
+            if(mois==12)
+            {
                 jour=1;
                 mois=1;
                 annee++;
             }
-            else{
+            else
+            {
                 jour=1;
                 mois++;
             }
-         }
-        else if((est_findemois(mois,annee)==29)&&(jour==29)){
+        }
+        else if((est_findemois(mois,annee)==29)&&(jour==29))
+        {
             jour=1;
             mois++;
-         }
-        else if((est_findemois(mois,annee)==28)&&(jour==28)){
+        }
+        else if((est_findemois(mois,annee)==28)&&(jour==28))
+        {
             jour=1;
             mois++;
-         }
-        else if((mois==1|| mois==3|| mois==5 ||mois== 7 || mois==8 || mois== 10 || mois==12) && (jour<31)&&(jour>0)){
+        }
+        else if((mois==1|| mois==3|| mois==5 ||mois== 7 || mois==8 || mois== 10 || mois==12) && (jour<31)&&(jour>0))
+        {
             jour++;
         }
-        else if((mois==4 || mois==6 || mois==9 || mois==11)&&(jour<30)&&(jour>0)){
-            jour++;
-
-        }
-        else if((est_bissextile(annee)==true)&&(jour<29)&&(jour>0)){
+        else if((mois==4 || mois==6 || mois==9 || mois==11)&&(jour<30)&&(jour>0))
+        {
             jour++;
         }
-        else if((est_bissextile(annee)==false)&&(jour<28)&&(jour>0)){
+        else if((est_bissextile(annee)==true)&&(jour<29)&&(jour>0))
+        {
+            jour++;
+        }
+        else if((est_bissextile(annee)==false)&&(jour<28)&&(jour>0))
+        {
             jour++;
         }
         else
             break;
 
-         }
+        }
 
  }
 ostream& operator<<(ostream& flux, date d)
