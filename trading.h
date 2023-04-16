@@ -12,9 +12,9 @@ class date
     int getjour();
     int getmois();
     int getannee();
-    void incrementerdate();
     int est_findemois(int M,int y);
     bool est_bissextile(int A);
+    void incrementerdate();
     friend ostream& operator<<(ostream& flux, date d);
     friend istream& operator>>(istream& flux, date d);
     friend bool operator==(date d,date b);
