@@ -1,0 +1,120 @@
+# depslib dependency file v1.0
+1682199855 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\main.cpp
+	<iostream>
+	"date.h"
+	"PersistancePrixJournaliers.h"
+	"PrixJournalier.h"
+	"test.h"
+	"boursevector.h"
+	"bourse.h"
+	<vector>
+
+1681950657 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\date.cpp
+	<iostream>
+	"date.h"
+	<stdlib.h>
+	<cstring>
+
+1681915937 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\date.h
+	<iostream>
+
+1681950701 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\prixjournalier.cpp
+	"PrixJournalier.h"
+	"date.h"
+	<string.h>
+	<iostream>
+
+1681772515 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\prixjournalier.h
+	"date.h"
+	<stdlib.h>
+	<string>
+	<iostream>
+
+1681859500 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\test.cpp
+	<iostream>
+	"test.h"
+	"date.h"
+
+1681763660 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\test.h
+	<iostream>
+	"date.h"
+
+1682199135 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\boure.cpp
+	"PrixJournalier.h"
+	<vector>
+	"date.h"
+	"Bourse.h"
+	"PersistancePrixJournaliers.h"
+	<set>
+	<iostream>
+	<stdlib.h>
+	<cstring>
+
+1682199855 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\bourse.h
+	"PrixJournalier.h"
+	<vector>
+	"date.h"
+	<set>
+
+1681777796 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\persistanceprixjournaliers.h
+	<vector>
+	<iostream>
+	<fstream>
+	"PrixJournalier.h"
+
+1682199162 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\boursevector.cpp
+	"PrixJournalier.h"
+	<vector>
+	"date.h"
+	"bourse.h"
+	"PersistancePrixJournaliers.h"
+	<set>
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	"boursevector.h"
+
+1682199481 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\boursevector.h
+	"bourse.h"
+	<iostream>
+	<set>
+	<vector>
+
+1681854061 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\randtrader.cpp
+
+1682021858 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\simulation.cpp
+
+1682199102 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\traderabstr.cpp
+	"portefeuille.hpp"
+	"Transaction.hpp"
+	"traderabstr.hpp"
+	<iostream>
+	<vector>
+	"PrixJournalier.h"
+	"boursevector.h"
+	"date.h"
+
+1682024538 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\portefeuille.cpp
+	<iostream>
+	<vector>
+	"portefeuille.hpp"
+
+1682024538 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\portefeuille.hpp
+	<iostream>
+	<vector>
+
+1682021405 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\randomtrader.cpp
+
+1682109243 source:c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\transaction.cpp
+	<iostream>
+	"Transaction.hpp"
+
+1682109203 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\transaction.hpp
+	<iostream>
+
+1682196772 c:\users\user\onedrive\bureau\mini.projet.orien.obj\trading\traderabstr.hpp
+	"bourse.h"
+	"portefeuille.hpp"
+	"Transaction.hpp"
+	<iostream>
+
