@@ -1,59 +1,58 @@
 #include <iostream>
-#include"date.h"
-#include"PersistancePrixJournaliers.h"
-#include"PrixJournalier.h"
-#include"test.h"
-#include"boursevector.h"
-#include"bourse.h"
-#include<vector>
+#include <cstdlib>
+#include <vector>
+#include <set>
+#include <cstring>
+#include <ctime>
+#include "Date.h"
+#include "PrixJournalier.h"
+#include "PersistancePrixJournalier.h"
+#include "Bourse.h"
+#include "BourseVector.h"
+#include "Portefeuille.h"
+#include "Transaction.h"
 using namespace std;
 
 int main()
 {
-    date date(24,11,2014);
+    Date date1(31,12,2010);
+    Date date2(22,04,2023);
     PrixJournalier pj;
     PersistancePrixJournaliers ppj;
     vector<PrixJournalier> vpj;
-
-
-    vpj=ppj.lirePrixJournaliersDUnFichier("C:\\Users\\user\\OneDrive\\Bureau\\prixjournalier\\prices_simple.csv");
-    boursevector bv(date,vpj);
+    vpj=ppj.lirePrixJournaliersDUnFichier("C:\\Users\\USER\\Desktop\\MonProjet\\prices_simple.csv");
+    BourseVector bv(date1,vpj);
+    /*
+    Titre t("A",12.33);
+    vector<Titre> vt;
+    vt.push_back(t);
+    Portefeuille p(100,vt);
+    cout<<p<<endl;
+    */
     //cin>>pj;
     //cout<<pj;
-
-    /*for(int i=0;i<static_cast<int>(vpj.size());i++)
-    {
-        cout<<vpj[i];
-    }*/
-    bv.getPrixJournaliersParDate(date);
-    for(auto j:bv.getPrixJournaliersParDate(date))
-    {
-        cout<<j<<'\n'<<endl;
-    }
-    /*Bourse b(date,vpj);
-    for(auto j:b.Action_Disponible_Au_jour_dhui_Pour_Le_Trader(500))
-    {
-        cout<<j<<'\n'<<endl;
-    }
-
     /*
-    b.getActionsDisponiblesParDate(date);
-    */
-    //set<string> s;
-    /*
-    s=b.getActionsDisponiblesParDate(date);
-    for(int i=0;i<static_cast<int>(s.size());i++)
+    for(auto i:vpj)
     {
-        cout<< s[i];
+        cout<<i;
     }
     */
-    /*s=bv.getActionsDisponiblesParDate(&date);
-    for(int i=0;i<static_cast<int>(s.size());i++)
+    //cout<< vpj[0];
+    //cout<< vpj[851263];
+    for (auto j : bv.getPrixJournaliersParDate(date1))
     {
-        cout<< s[i];
+        cout << j <<endl;
     }
-
-    b.getPrixJournaliersParDate(date);
-    */
-   return 0;
+    cout<<"----------------------------------------"<<endl;
+    for(auto i : bv.getActionsDisponiblesParDate(date1))
+    {
+        cout<<i<<endl;
+    }
+    cout<<"----------------------------------------"<<endl;
+    double s=30;
+    for(auto i : bv.getActionsDisponiblesAujourdhuiPourLeTrader(s))
+    {
+        cout<<i<<endl;
+    }
+    return 0;
 }

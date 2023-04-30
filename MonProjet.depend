@@ -1,0 +1,164 @@
+# depslib dependency file v1.0
+1682105505 source:c:\users\user\desktop\monprojet\date.cpp
+	<iostream>
+	"Date.h"
+	<cstdlib>
+	<cstring>
+
+1682627602 source:c:\users\user\desktop\monprojet\main.cpp
+	<iostream>
+	<cstdlib>
+	<vector>
+	<set>
+	<cstring>
+	<ctime>
+	"Date.h"
+	"PrixJournalier.h"
+	"PersistancePrixJournalier.h"
+	"Bourse.h"
+	"BourseVector.h"
+	"Portefeuille.h"
+	"Transaction.h"
+
+1682276403 c:\users\user\desktop\monprojet\date.h
+	"iostream"
+
+1682331191 source:c:\users\user\desktop\monprojet\prixjournalier.cpp
+	"PrixJournalier.h"
+	"Date.h"
+	<cstring>
+	<iostream>
+	<cstdlib>
+	<sstream>
+	<cstdlib>
+	<string>
+
+1682331191 c:\users\user\desktop\monprojet\prixjournalier.h
+	"Date.h"
+	<iostream>
+	<cstring>
+
+1682110130 c:\users\user\desktop\monprojet\persistanceprixjournalier.h
+	<vector>
+	<iostream>
+	<fstream>
+	"PrixJournalier.h"
+
+1682329617 c:\users\user\desktop\monprojet\bourse.h
+	"PrixJournalier.h"
+	"PersistancePrixJournalier.h"
+	<vector>
+	"Date.h"
+	<set>
+
+1682273513 source:c:\users\user\desktop\monprojet\bourse.cpp
+	"Date.h"
+	"PrixJournalier.h"
+	"PersistancePrixJournalier.h"
+	"Bourse.h"
+	<set>
+	<iostream>
+	<string>
+	<stdlib.h>
+	<vector>
+
+1682331228 source:c:\users\user\desktop\monprojet\boursevector.cpp
+	"PrixJournalier.h"
+	<vector>
+	"Date.h"
+	"PersistancePrixJournalier.h"
+	<set>
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	"BourseVector.h"
+	"Bourse.h"
+
+1682274908 c:\users\user\desktop\monprojet\boursevector.h
+	"Bourse.h"
+	"Date.h"
+	"PrixJournalier.h"
+	<iostream>
+	<vector>
+	<cstring>
+	<set>
+
+1682329446 source:c:\users\user\desktop\monprojet\simulation.cpp
+	<iostream>
+	<cstdlib>
+	<vector>
+	<cstring>
+	"Simulation.h"
+	"Portefeuille.h"
+	"Date.h"
+	"PrixJournalier.h"
+	"Transaction.h"
+
+1682696797 source:c:\users\user\desktop\monprojet\trader.cpp
+	"Trader.h"
+	"Portefeuille.h"
+	"Transaction.h"
+	<cstring>
+
+1682277085 c:\users\user\desktop\monprojet\simulation.h
+	<iostream>
+	"Date.h"
+	"Bourse.h"
+	"Trader.h"
+	"Transaction.h"
+
+1682696886 c:\users\user\desktop\monprojet\trader.h
+	<iostream>
+	<cstring>
+	"Bourse.h"
+	"Portefeuille.h"
+	"Transaction.h"
+
+1682699660 source:c:\users\user\desktop\monprojet\portefeuille.cpp
+	<iostream>
+	<cstdlib>
+	<vector>
+	<string>
+	<algorithm>
+	"Portefeuille.h"
+
+1682699668 c:\users\user\desktop\monprojet\portefeuille.h
+	<iostream>
+	<cstring>
+	<vector>
+	"Bourse.h"
+
+1682699827 source:c:\users\user\desktop\monprojet\traderaleatoire.cpp
+	"TraderAleatoire.h"
+	"Portefeuille.h"
+	"Transaction.h"
+	"Trader.h"
+	"Bourse.h"
+	<cstring>
+	<cstdlib>
+
+1682696595 c:\users\user\desktop\monprojet\traderaleatoire.h
+	<iostream>
+	<cstring>
+	<cstdlib>
+	"Bourse.h"
+	"Portefeuille.h"
+	"Transaction.h"
+	"Trader.h"
+
+1682698621 source:c:\users\user\desktop\monprojet\transaction.cpp
+	<iostream>
+	"Transaction.h"
+	"Bourse.h"
+	<vector>
+	<set>
+	<cstring>
+	<algorithm>
+
+1682694688 c:\users\user\desktop\monprojet\transaction.h
+	<iostream>
+	"Bourse.h"
+	"Portefeuille.h"
+	<vector>
+	<set>
+

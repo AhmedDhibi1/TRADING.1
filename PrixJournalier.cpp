@@ -1,8 +1,12 @@
-#include"PrixJournalier.h"
-#include "date.h"
-#include<string.h>
+#include "PrixJournalier.h"
+#include "Date.h"
+#include<cstring>
 #include<iostream>
-PrixJournalier::PrixJournalier(string s,double p,date da)
+#include<cstdlib>
+#include<sstream>
+#include<cstdlib>
+#include<string>
+PrixJournalier::PrixJournalier(string s,double p,Date da)
 {
     nomAction=s;
     prix=p;
@@ -12,24 +16,30 @@ PrixJournalier::PrixJournalier()
 {
 
 }
-string PrixJournalier::GetNomAction()
+PrixJournalier::~PrixJournalier()
 {
-    return nomAction;
+
 }
-double PrixJournalier::GetPrix()
+string PrixJournalier::getNomAction()const
 {
-    return prix;
+    return (this->nomAction);
 }
-date PrixJournalier::GetDate()
+double PrixJournalier::getPrix()const
 {
-    return d;
+    return (this->prix);
 }
-ostream& operator<<(ostream& flux, PrixJournalier &Pj)
+Date PrixJournalier::getDate()const
 {
-    flux<<Pj.d<<":"<<Pj.nomAction<<":"<<Pj.prix;
+    return (this->d);
+}
+
+ostream& operator<<(ostream& flux,  PrixJournalier &Pj)
+{
+    flux<<Pj.d<<":"<<Pj.nomAction<<":"<<Pj.prix<<endl;
     return flux;
 }
-istream& operator>>(istream& flux, PrixJournalier &pj)
+
+istream& operator>>(istream& flux, PrixJournalier& pj)
 {
     char tab[100];
     flux>>pj.d;
@@ -39,3 +49,5 @@ istream& operator>>(istream& flux, PrixJournalier &pj)
     pj.prix=atof(tab);
     return flux;
 }
+
+

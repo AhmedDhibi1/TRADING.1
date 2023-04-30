@@ -1,9 +1,8 @@
 #ifndef PRIXJOURNALIER_H_INCLUDED
 #define PRIXJOURNALIER_H_INCLUDED
-#include "date.h"
-#include<stdlib.h>
-#include<string>
+#include "Date.h"
 #include<iostream>
+#include<cstring>
 using namespace std;
 
 class PrixJournalier
@@ -11,17 +10,20 @@ class PrixJournalier
     private:
         string nomAction;
         double prix;
-        date d;
+        Date d;
     public:
-        PrixJournalier(string s,double p,date da);
+        PrixJournalier(string s,double p,Date da);
         PrixJournalier();
-        string GetNomAction();
-        double GetPrix();
-        date GetDate();
-        friend ostream& operator<<(ostream& flux, PrixJournalier &Pj);
-        friend istream& operator>>(istream& flux, PrixJournalier &pj);
+        ~PrixJournalier();
+        string getNomAction()const;
+        double getPrix()const;
+        Date getDate()const;
+        friend ostream& operator<<(ostream& flux, PrixJournalier& Pj);
+        friend istream& operator>>(istream& flux, PrixJournalier& pj);
 
 
 };
+
+
 
 #endif // PRIXJOURNALIER_H_INCLUDED
